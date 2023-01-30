@@ -33,13 +33,18 @@ All the libraries and dependencies can be found in `pom.xml` file. Below are the
 - run `./mvnw spring-boot:run`
 - Wait for below log messages
 ```
-2023-01-29T19:22:26.483-08:00  INFO 2061 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-01-29T19:22:26.493-08:00  INFO 2061 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2357 ms
-2023-01-29T19:22:28.061-08:00  INFO 2061 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-29T19:22:28.073-08:00  INFO 2061 --- [           main] com.uw.oris.LaureateCountApplication     : Started LaureateCountApplication in 5.139 seconds (process running for 5.877)
-2023-01-29T19:22:35.601-08:00  INFO 2061 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-01-29T19:22:35.601-08:00  INFO 2061 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-01-29T19:22:35.602-08:00  INFO 2061 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-29T22:00:42.147-08:00  INFO 137 --- [           main] com.uw.oris.LaureateCountApplication     : Starting LaureateCountApplication using Java 17.0.5 with PID 137 (/mnt/e/intellij_workspace/oris/target/classes started by zxc in /mnt/e/intellij_workspace/oris)
+2023-01-29T22:00:42.153-08:00  INFO 137 --- [           main] com.uw.oris.LaureateCountApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-01-29T22:00:45.120-08:00  INFO 137 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-29T22:00:45.167-08:00  INFO 137 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-29T22:00:45.168-08:00  INFO 137 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-01-29T22:00:45.559-08:00  INFO 137 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-29T22:00:45.560-08:00  INFO 137 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3291 ms
+2023-01-29T22:00:47.614-08:00  INFO 137 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-29T22:00:47.625-08:00  INFO 137 --- [           main] com.uw.oris.LaureateCountApplication     : Started LaureateCountApplication in 7.086 seconds (process running for 8.267)
+2023-01-29T22:00:55.039-08:00  INFO 137 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-29T22:00:55.039-08:00  INFO 137 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-29T22:00:55.040-08:00  INFO 137 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 
 ```
 
