@@ -1,9 +1,19 @@
 # Laureates Count API
 
+The web service returns the number of laureates by country (of birth) and sort them in
+descending order. Laureates are fetched from nobel prize [API](https://www.nobelprize.org/about/developer-zone-2/.
+). 
+
+The country with the highest number of laureates should appear first in
+the list, followed by next highest and so on. If two countries have the same laureate count,
+they can appear in any order.
+
+Access the Laureates Count API: https://laureate-count-application.herokuapp.com/laureate-count
+
 ## Project Dependencies
 
 Project has below dependencies:
-- Java JDK 11
+- Java JDK 17
 - Maven 3.6.3
 - Spring Boot 2.6.2
 
@@ -12,7 +22,7 @@ All the libraries and dependencies can be found in `pom.xml` file. Below are the
 
 - Spring Boot
 - Lombok
-- JUnit 5
+- JUnit 4
 - Mockito
 
 ## Running the application locally
@@ -33,7 +43,7 @@ All the libraries and dependencies can be found in `pom.xml` file. Below are the
 
 ```
 
-**API:** [http://127.0.0.1:8080/laureate-count](http://127.0.0.1:8080/laureate-count)
+**Local Endpoint:** [http://127.0.0.1:8080/laureate-count](http://127.0.0.1:8080/laureate-count)
 
 **Response:**
 ```json
