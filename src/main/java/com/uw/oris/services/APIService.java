@@ -71,7 +71,7 @@ public class APIService {
     }
 
     @CacheEvict(value = "getLaureateCountByCountry", allEntries = true)
-    @Scheduled(fixedDelay = 36000L)
+    @Scheduled(fixedDelay = 600000L)
     public void cacheEvict() {
         log.info("Evicting getLaureateCountByCountry cache.");
     }
