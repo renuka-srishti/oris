@@ -29,7 +29,7 @@ All the libraries and dependencies can be found in `pom.xml` file. Below are the
 - Install Java 17 or openjdk-17.
 - Install [maven](https://maven.apache.org/install.html).
 - Clone this repository.
-- `cd uw`.
+- `cd oris`.
 - run `./mvnw spring-boot:run`
 - Wait for below log messages
 ```
