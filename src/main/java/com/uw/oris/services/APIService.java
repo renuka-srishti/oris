@@ -3,6 +3,9 @@ package com.uw.oris.services;
 import com.uw.oris.services.dto.LaureateCount;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,6 +25,7 @@ public class APIService {
 
     private final LaureateService laureateService;
 
+    @Cacheable("getLaureateCountByCountry")
     public List<LaureateCount> getLaureateCountByCountry() throws ExecutionException, InterruptedException {
         // fetch all laureates from API including paginated response
         log.info("Fetching countries for all laureates from api.");
@@ -64,5 +68,11 @@ public class APIService {
                         Map.Entry::getValue,
                         (k, v) -> v, LinkedHashMap::new)
                 );
+    }
+
+    @CacheEvict(value = "getLaureateCountByCountry", allEntries = true)
+    @Scheduled(fixedDelay = 36000L)
+    public void cacheEvict() {
+        log.info("Evicting getLaureateCountByCountry cache.");
     }
 }

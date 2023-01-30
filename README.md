@@ -10,6 +10,9 @@ they can appear in any order.
 
 Access the Laureates Count API: https://laureate-count-application.herokuapp.com/laureate-count
 
+Laureates Count API (`/laureate-count`) caches the response of nobel prize [API](https://www.nobelprize.org/about/developer-zone-2/.
+). The cache eviction policy is currently configured to `10mins` for demo purposes, but, ideally should be `24hrs`.
+
 ## Project Dependencies
 
 Project has below dependencies:
